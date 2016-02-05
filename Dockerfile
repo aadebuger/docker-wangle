@@ -22,8 +22,11 @@ RUN apt-get install -yq \
 WORKDIR /home
 RUN git clone https://github.com/facebook/wangle.git
 WORKDIR /home/wangle/wangle
-add gmock-1.7.0.zip /home/wangle/wangle/gmock-1.7.0
+run sed -i 's/https:\/\/googlemock.googlecode.com\/files//g' CMakeLists.txt
+add gmock-1.7.0.zip /home/wangle/wangle
+
 run ls /home/wangle/wangle
+runt cat /home/wangle/wangle/CmakeLists.txt
 run cmake .
 run make 
 #run ctest
