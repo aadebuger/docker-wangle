@@ -27,7 +27,7 @@ add gmock-1.7.0.zip /home/wangle/wangle
 
 run ls /home/wangle/wangle
 run cat /home/wangle/wangle/CMakeLists.txt
-run cmake .
-run make 
+#run cmake .
+#run make 
 #run ctest
-run make install
+#run make install
