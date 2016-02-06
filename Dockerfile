@@ -30,4 +30,4 @@ run cat /home/wangle/wangle/CMakeLists.txt
 run cmake .
 run make 
 #run ctest
-#run make install
+run make install
